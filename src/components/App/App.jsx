@@ -9,8 +9,8 @@ export const App = () => {
       <Routes>
         <Route path={routes.HOME} element={<Header />}>
           <Route index element={<Home />} />
-          <Route path={routes.COUNTRY} component={<CountrySearch />} />
-          <Route path={routes.COUNTRY_ID} component={<Country/>} />
+          <Route path={routes.COUNTRY} element={<CountrySearch />} />
+          <Route path={routes.COUNTRY_ID} element={<Country />} />
         </Route>
       </Routes>
     </>
